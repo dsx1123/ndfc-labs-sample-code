@@ -1,0 +1,1313 @@
+{
+	"info": {
+		"_postman_id": "9738c8a3-12ba-4011-aef0-9e0a5d43e6f8",
+		"name": "NDFC RESTAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "210543"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"domain\": \"{{login_domain}}\",\r\n    \"userName\": \"{{username}}\",\r\n    \"userPasswd\": \"{{password}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domain\": \"{{login_domain}}\",\r\n    \"userName\": \"{{username}}\",\r\n    \"userPasswd\": \"{{password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "AuthCookie=eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5am1qaDZjNHp2dnl3Y2c2enRjanlnNGtoZzdkaTh4IiwidHlwIjoiSldUIn0.eyJhdnBhaXIiOiJzaGVsbDpkb21haW5zPWFsbC9hZG1pbi8iLCJjbHVzdGVyIjoiNGU0NDJkMzItMzkwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiZXhwIjoxNjgzMjUzNTc3LCJpYXQiOjE2ODMyNTIzNzcsImlkIjoiNDhkMTA1YmRmYmM0OWE1ZmNmMzlhMTBiOTYxMzg2ZTYxZGZlNDAwODVjYjAzMTVkODE4Yjc2MWM1NzM1ZGFmYSIsImlzcyI6Im5kIiwiaXNzLWhvc3QiOiIxMC4xNS4wLjk1IiwicmJhYyI6W3siZG9tYWluIjoiYWxsIiwicm9sZXNSIjoxNjc3NzIxNiwicm9sZXNXIjoxLCJyb2xlcyI6W1siYWRtaW4iLCJXcml0ZVByaXYiXSxbImFwcC11c2VyIiwiUmVhZFByaXYiXV19XSwic2Vzc2lvbmlkIjoiRjZDdmxjZXk4cU1jNkV1TFRic0N6ajRIIiwidXNlcmZsYWdzIjowLCJ1c2VyaWQiOjI1MDAyLCJ1c2VybmFtZSI6ImFkbWluIiwidXNlcnR5cGUiOiJsb2NhbCJ9.mT-2joZR39TarleRaMdtCwqnqD1Lw1-xyHqMqV7FW2EjgCSiL1OR8f8L5wl7OzTHoy2LbbMNACKXA7UYPjd2vkk1yONE3PNe9ajnzzWDN7f2myB9eppoKm_DyDD-nZJh6ZhMDWzlMBahInfcN3CBODcG7NWdLpU_BNMXJBFUiwJyqcJ8D9uSYbuNfQlY_axnMzPycTnGr6bOvQPqfYDaLYepaldTpIsyGfUTif4Li_C2j5OlItJAw2rdGHi9tBK3M5Oz__EX9NK7IkRxTgQLm111NvxEGt3NDRLd2JLg54a2Z9JQZRQ1NPZqMJuRZMM1L4zP_zl6zGWzqGtlCxBrPw; Max-Age=1200; Secure; SameSite=Strict"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:06:17 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwttoken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5am1qaDZjNHp2dnl3Y2c2enRjanlnNGtoZzdkaTh4IiwidHlwIjoiSldUIn0.eyJhdnBhaXIiOiJzaGVsbDpkb21haW5zPWFsbC9hZG1pbi8iLCJjbHVzdGVyIjoiNGU0NDJkMzItMzkwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiZXhwIjoxNjgzMjUzNTc3LCJpYXQiOjE2ODMyNTIzNzcsImlkIjoiNDhkMTA1YmRmYmM0OWE1ZmNmMzlhMTBiOTYxMzg2ZTYxZGZlNDAwODVjYjAzMTVkODE4Yjc2MWM1NzM1ZGFmYSIsImlzcyI6Im5kIiwiaXNzLWhvc3QiOiIxMC4xNS4wLjk1IiwicmJhYyI6W3siZG9tYWluIjoiYWxsIiwicm9sZXNSIjoxNjc3NzIxNiwicm9sZXNXIjoxLCJyb2xlcyI6W1siYWRtaW4iLCJXcml0ZVByaXYiXSxbImFwcC11c2VyIiwiUmVhZFByaXYiXV19XSwic2Vzc2lvbmlkIjoiRjZDdmxjZXk4cU1jNkV1TFRic0N6ajRIIiwidXNlcmZsYWdzIjowLCJ1c2VyaWQiOjI1MDAyLCJ1c2VybmFtZSI6ImFkbWluIiwidXNlcnR5cGUiOiJsb2NhbCJ9.mT-2joZR39TarleRaMdtCwqnqD1Lw1-xyHqMqV7FW2EjgCSiL1OR8f8L5wl7OzTHoy2LbbMNACKXA7UYPjd2vkk1yONE3PNe9ajnzzWDN7f2myB9eppoKm_DyDD-nZJh6ZhMDWzlMBahInfcN3CBODcG7NWdLpU_BNMXJBFUiwJyqcJ8D9uSYbuNfQlY_axnMzPycTnGr6bOvQPqfYDaLYepaldTpIsyGfUTif4Li_C2j5OlItJAw2rdGHi9tBK3M5Oz__EX9NK7IkRxTgQLm111NvxEGt3NDRLd2JLg54a2Z9JQZRQ1NPZqMJuRZMM1L4zP_zl6zGWzqGtlCxBrPw\",\n    \"username\": \"admin\",\n    \"usertype\": \"local\",\n    \"rbac\": \"[{\\\"domain\\\":\\\"all\\\",\\\"rolesR\\\":16777216,\\\"rolesW\\\":1,\\\"roles\\\":[[\\\"admin\\\",\\\"WritePriv\\\"],[\\\"app-user\\\",\\\"ReadPriv\\\"]]}]\",\n    \"statusCode\": 200,\n    \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5am1qaDZjNHp2dnl3Y2c2enRjanlnNGtoZzdkaTh4IiwidHlwIjoiSldUIn0.eyJhdnBhaXIiOiJzaGVsbDpkb21haW5zPWFsbC9hZG1pbi8iLCJjbHVzdGVyIjoiNGU0NDJkMzItMzkwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiZXhwIjoxNjgzMjUzNTc3LCJpYXQiOjE2ODMyNTIzNzcsImlkIjoiNDhkMTA1YmRmYmM0OWE1ZmNmMzlhMTBiOTYxMzg2ZTYxZGZlNDAwODVjYjAzMTVkODE4Yjc2MWM1NzM1ZGFmYSIsImlzcyI6Im5kIiwiaXNzLWhvc3QiOiIxMC4xNS4wLjk1IiwicmJhYyI6W3siZG9tYWluIjoiYWxsIiwicm9sZXNSIjoxNjc3NzIxNiwicm9sZXNXIjoxLCJyb2xlcyI6W1siYWRtaW4iLCJXcml0ZVByaXYiXSxbImFwcC11c2VyIiwiUmVhZFByaXYiXV19XSwic2Vzc2lvbmlkIjoiRjZDdmxjZXk4cU1jNkV1TFRic0N6ajRIIiwidXNlcmZsYWdzIjowLCJ1c2VyaWQiOjI1MDAyLCJ1c2VybmFtZSI6ImFkbWluIiwidXNlcnR5cGUiOiJsb2NhbCJ9.mT-2joZR39TarleRaMdtCwqnqD1Lw1-xyHqMqV7FW2EjgCSiL1OR8f8L5wl7OzTHoy2LbbMNACKXA7UYPjd2vkk1yONE3PNe9ajnzzWDN7f2myB9eppoKm_DyDD-nZJh6ZhMDWzlMBahInfcN3CBODcG7NWdLpU_BNMXJBFUiwJyqcJ8D9uSYbuNfQlY_axnMzPycTnGr6bOvQPqfYDaLYepaldTpIsyGfUTif4Li_C2j5OlItJAw2rdGHi9tBK3M5Oz__EX9NK7IkRxTgQLm111NvxEGt3NDRLd2JLg54a2Z9JQZRQ1NPZqMJuRZMM1L4zP_zl6zGWzqGtlCxBrPw\"\n}"
+				},
+				{
+					"name": "401 Unauthorized",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domain\": \"{{login_domain}}\",\r\n    \"userName\": \"{{username}}\",\r\n    \"userPasswd\": \"cisco123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 04:30:29 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\":\"Invalid Username/Password\"}"
+				}
+			]
+		},
+		{
+			"name": "Query Fabric Inventory",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = JSON.parse(responseBody);\r",
+							"const leaf1 = \"leaf1\"\r",
+							"const leaf2 = \"leaf2\"\r",
+							"\r",
+							"for (var i = 0; i < jsonData.length; i ++) {\r",
+							"    if (leaf1 === jsonData[i].logicalName) {\r",
+							"        pm.collectionVariables.set(\"sn_leaf1\", jsonData[i].serialNumber);\r",
+							"    }\r",
+							"    if (leaf2 === jsonData[i].logicalName) {\r",
+							"        pm.collectionVariables.set(\"sn_leaf2\", jsonData[i].serialNumber);\r",
+							"    }\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Nd-Apikey",
+						"value": "{{apiKey}}",
+						"type": "text"
+					},
+					{
+						"key": "X-Nd-Username",
+						"value": "{{username}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/control/fabrics/{{fabric}}/inventory/switchesByFabric",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"control",
+						"fabrics",
+						"{{fabric}}",
+						"inventory",
+						"switchesByFabric"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/control/fabrics/{{fabric}}/inventory/switchesByFabric",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"control",
+								"fabrics",
+								"{{fabric}}",
+								"inventory",
+								"switchesByFabric"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "5955"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 May 2023 22:21:33 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"switchRoleEnum\": \"Leaf\",\n        \"vrf\": \"management\",\n        \"fabricTechnology\": \"VXLANFabric\",\n        \"deviceType\": \"Switch_Fabric\",\n        \"fabricId\": 2,\n        \"name\": null,\n        \"domainID\": 0,\n        \"wwn\": null,\n        \"membership\": null,\n        \"ports\": 0,\n        \"model\": \"N9K-C9300v\",\n        \"version\": null,\n        \"upTime\": 0,\n        \"ipAddress\": \"10.15.29.12\",\n        \"mgmtAddress\": null,\n        \"vendor\": null,\n        \"displayHdrs\": null,\n        \"displayValues\": null,\n        \"colDBId\": 0,\n        \"fid\": 0,\n        \"isLan\": false,\n        \"is_smlic_enabled\": false,\n        \"present\": true,\n        \"licenseViolation\": false,\n        \"managable\": true,\n        \"mds\": false,\n        \"connUnitStatus\": 0,\n        \"standbySupState\": 0,\n        \"activeSupSlot\": 0,\n        \"unmanagableCause\": \"\",\n        \"lastScanTime\": 0,\n        \"fabricName\": \"fabric-stage\",\n        \"modelType\": 0,\n        \"logicalName\": \"staging-leaf1\",\n        \"switchDbID\": 3250,\n        \"uid\": 0,\n        \"release\": \"9.3(10)\",\n        \"location\": null,\n        \"contact\": null,\n        \"upTimeStr\": \"2 days, 21:30:59\",\n        \"upTimeNumber\": 0,\n        \"network\": null,\n        \"nonMdsModel\": null,\n        \"numberOfPorts\": 0,\n        \"availPorts\": 0,\n        \"usedPorts\": 0,\n        \"vsanWwn\": null,\n        \"vsanWwnName\": null,\n        \"swWwn\": null,\n        \"swWwnName\": null,\n        \"serialNumber\": \"9BVVT2BV247\",\n        \"domain\": null,\n        \"principal\": null,\n        \"status\": \"ok\",\n        \"index\": 0,\n        \"licenseDetail\": null,\n        \"isPmCollect\": false,\n        \"sanAnalyticsCapable\": false,\n        \"vdcId\": 0,\n        \"vdcName\": \"\",\n        \"vdcMac\": null,\n        \"fcoeEnabled\": false,\n        \"cpuUsage\": 0,\n        \"memoryUsage\": 0,\n        \"scope\": null,\n        \"fex\": false,\n        \"health\": -1,\n        \"npvEnabled\": false,\n        \"linkName\": null,\n        \"username\": null,\n        \"primaryIP\": \"\",\n        \"primarySwitchDbID\": 0,\n        \"secondaryIP\": \"\",\n        \"secondarySwitchDbID\": 0,\n        \"isEchSupport\": false,\n        \"moduleIndexOffset\": 9999,\n        \"sysDescr\": \"\",\n        \"isTrapDelayed\": false,\n        \"switchRole\": \"leaf\",\n        \"mode\": \"Normal\",\n        \"hostName\": null,\n        \"ipDomain\": null,\n        \"systemMode\": \"Normal\",\n        \"sourceVrf\": \"management\",\n        \"sourceInterface\": \"mgmt0\",\n        \"modules\": null,\n        \"fexMap\": {},\n        \"isVpcConfigured\": true,\n        \"vpcDomain\": 1,\n        \"role\": \"Secondary\",\n        \"peer\": \"staging-leaf2\",\n        \"peerSerialNumber\": \"99NJT0MDE5B\",\n        \"peerSwitchDbId\": 5460,\n        \"peerlinkState\": \"Peer is OK\",\n        \"keepAliveState\": \"Peer is alive\",\n        \"consistencyState\": true,\n        \"sendIntf\": \"mgmt0\",\n        \"recvIntf\": \"mgmt0\",\n        \"interfaces\": null,\n        \"elementType\": null,\n        \"monitorMode\": false,\n        \"freezeMode\": false,\n        \"isNonNexus\": false,\n        \"swUUIDId\": 1740,\n        \"swUUID\": \"DCNM-UUID-1740\",\n        \"swType\": null,\n        \"ccStatus\": \"In-Sync\",\n        \"operStatus\": \"Minor\"\n    },\n    {\n        \"switchRoleEnum\": \"Leaf\",\n        \"vrf\": \"management\",\n        \"fabricTechnology\": \"VXLANFabric\",\n        \"deviceType\": \"Switch_Fabric\",\n        \"fabricId\": 2,\n        \"name\": null,\n        \"domainID\": 0,\n        \"wwn\": null,\n        \"membership\": null,\n        \"ports\": 0,\n        \"model\": \"N9K-C9300v\",\n        \"version\": null,\n        \"upTime\": 0,\n        \"ipAddress\": \"10.15.29.13\",\n        \"mgmtAddress\": null,\n        \"vendor\": null,\n        \"displayHdrs\": null,\n        \"displayValues\": null,\n        \"colDBId\": 0,\n        \"fid\": 0,\n        \"isLan\": false,\n        \"is_smlic_enabled\": false,\n        \"present\": true,\n        \"licenseViolation\": false,\n        \"managable\": true,\n        \"mds\": false,\n        \"connUnitStatus\": 0,\n        \"standbySupState\": 0,\n        \"activeSupSlot\": 0,\n        \"unmanagableCause\": \"\",\n        \"lastScanTime\": 0,\n        \"fabricName\": \"fabric-stage\",\n        \"modelType\": 0,\n        \"logicalName\": \"staging-leaf2\",\n        \"switchDbID\": 5460,\n        \"uid\": 0,\n        \"release\": \"9.3(10)\",\n        \"location\": null,\n        \"contact\": null,\n        \"upTimeStr\": \"2 days, 21:30:46\",\n        \"upTimeNumber\": 0,\n        \"network\": null,\n        \"nonMdsModel\": null,\n        \"numberOfPorts\": 0,\n        \"availPorts\": 0,\n        \"usedPorts\": 0,\n        \"vsanWwn\": null,\n        \"vsanWwnName\": null,\n        \"swWwn\": null,\n        \"swWwnName\": null,\n        \"serialNumber\": \"99NJT0MDE5B\",\n        \"domain\": null,\n        \"principal\": null,\n        \"status\": \"ok\",\n        \"index\": 0,\n        \"licenseDetail\": null,\n        \"isPmCollect\": false,\n        \"sanAnalyticsCapable\": false,\n        \"vdcId\": 0,\n        \"vdcName\": \"\",\n        \"vdcMac\": null,\n        \"fcoeEnabled\": false,\n        \"cpuUsage\": 0,\n        \"memoryUsage\": 0,\n        \"scope\": null,\n        \"fex\": false,\n        \"health\": -1,\n        \"npvEnabled\": false,\n        \"linkName\": null,\n        \"username\": null,\n        \"primaryIP\": \"\",\n        \"primarySwitchDbID\": 0,\n        \"secondaryIP\": \"\",\n        \"secondarySwitchDbID\": 0,\n        \"isEchSupport\": false,\n        \"moduleIndexOffset\": 9999,\n        \"sysDescr\": \"\",\n        \"isTrapDelayed\": false,\n        \"switchRole\": \"leaf\",\n        \"mode\": \"Normal\",\n        \"hostName\": null,\n        \"ipDomain\": null,\n        \"systemMode\": \"Normal\",\n        \"sourceVrf\": \"management\",\n        \"sourceInterface\": \"mgmt0\",\n        \"modules\": null,\n        \"fexMap\": {},\n        \"isVpcConfigured\": true,\n        \"vpcDomain\": 1,\n        \"role\": \"Primary\",\n        \"peer\": \"staging-leaf1\",\n        \"peerSerialNumber\": \"9BVVT2BV247\",\n        \"peerSwitchDbId\": 3250,\n        \"peerlinkState\": \"Peer is OK\",\n        \"keepAliveState\": \"Peer is alive\",\n        \"consistencyState\": true,\n        \"sendIntf\": \"mgmt0\",\n        \"recvIntf\": \"mgmt0\",\n        \"interfaces\": null,\n        \"elementType\": null,\n        \"monitorMode\": false,\n        \"freezeMode\": false,\n        \"isNonNexus\": false,\n        \"swUUIDId\": 1710,\n        \"swUUID\": \"DCNM-UUID-1710\",\n        \"swType\": null,\n        \"ccStatus\": \"In-Sync\",\n        \"operStatus\": \"Minor\"\n    },\n    {\n        \"switchRoleEnum\": \"Spine\",\n        \"vrf\": \"management\",\n        \"fabricTechnology\": \"VXLANFabric\",\n        \"deviceType\": \"Switch_Fabric\",\n        \"fabricId\": 2,\n        \"name\": null,\n        \"domainID\": 0,\n        \"wwn\": null,\n        \"membership\": null,\n        \"ports\": 0,\n        \"model\": \"N9K-C9500v\",\n        \"version\": null,\n        \"upTime\": 0,\n        \"ipAddress\": \"10.15.29.11\",\n        \"mgmtAddress\": null,\n        \"vendor\": null,\n        \"displayHdrs\": null,\n        \"displayValues\": null,\n        \"colDBId\": 0,\n        \"fid\": 0,\n        \"isLan\": false,\n        \"is_smlic_enabled\": false,\n        \"present\": true,\n        \"licenseViolation\": false,\n        \"managable\": true,\n        \"mds\": false,\n        \"connUnitStatus\": 0,\n        \"standbySupState\": 0,\n        \"activeSupSlot\": 0,\n        \"unmanagableCause\": \"\",\n        \"lastScanTime\": 0,\n        \"fabricName\": \"fabric-stage\",\n        \"modelType\": 0,\n        \"logicalName\": \"staging-spine1\",\n        \"switchDbID\": 1020,\n        \"uid\": 0,\n        \"release\": \"9.3(10)\",\n        \"location\": null,\n        \"contact\": null,\n        \"upTimeStr\": \"2 days, 21:31:09\",\n        \"upTimeNumber\": 0,\n        \"network\": null,\n        \"nonMdsModel\": null,\n        \"numberOfPorts\": 0,\n        \"availPorts\": 0,\n        \"usedPorts\": 0,\n        \"vsanWwn\": null,\n        \"vsanWwnName\": null,\n        \"swWwn\": null,\n        \"swWwnName\": null,\n        \"serialNumber\": \"959ALR66UBF\",\n        \"domain\": null,\n        \"principal\": null,\n        \"status\": \"ok\",\n        \"index\": 0,\n        \"licenseDetail\": null,\n        \"isPmCollect\": false,\n        \"sanAnalyticsCapable\": false,\n        \"vdcId\": 0,\n        \"vdcName\": \"\",\n        \"vdcMac\": null,\n        \"fcoeEnabled\": false,\n        \"cpuUsage\": 0,\n        \"memoryUsage\": 0,\n        \"scope\": null,\n        \"fex\": false,\n        \"health\": -1,\n        \"npvEnabled\": false,\n        \"linkName\": null,\n        \"username\": null,\n        \"primaryIP\": \"\",\n        \"primarySwitchDbID\": 0,\n        \"secondaryIP\": \"\",\n        \"secondarySwitchDbID\": 0,\n        \"isEchSupport\": false,\n        \"moduleIndexOffset\": 9999,\n        \"sysDescr\": \"\",\n        \"isTrapDelayed\": false,\n        \"switchRole\": \"spine\",\n        \"mode\": \"Normal\",\n        \"hostName\": null,\n        \"ipDomain\": null,\n        \"systemMode\": \"Normal\",\n        \"sourceVrf\": \"management\",\n        \"sourceInterface\": \"mgmt0\",\n        \"modules\": null,\n        \"fexMap\": {},\n        \"isVpcConfigured\": false,\n        \"vpcDomain\": 0,\n        \"role\": null,\n        \"peer\": null,\n        \"peerSerialNumber\": null,\n        \"peerSwitchDbId\": 0,\n        \"peerlinkState\": null,\n        \"keepAliveState\": null,\n        \"consistencyState\": false,\n        \"sendIntf\": null,\n        \"recvIntf\": null,\n        \"interfaces\": null,\n        \"elementType\": null,\n        \"monitorMode\": false,\n        \"freezeMode\": false,\n        \"isNonNexus\": false,\n        \"swUUIDId\": 1050,\n        \"swUUID\": \"DCNM-UUID-1050\",\n        \"swType\": null,\n        \"ccStatus\": \"In-Sync\",\n        \"operStatus\": \"Minor\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Change Interface to Access",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policy\": \"int_access_host\",\n    \"interfaces\": [\n        {\n            \"serialNumber\": \"{{sn_leaf1}}\",\n            \"ifName\": \"{{interface}}\",\n            \"nvPairs\": {\n                \"INTF_NAME\": \"{{interface}}\",\n                \"BPDUGUARD_ENABLED\": \"true\",\n                \"PORTTYPE_FAST_ENABLED\": \"true\",\n                \"MTU\": \"jumbo\",\n                \"SPEED\": \"Auto\",\n                \"ACCESS_VLAN\": \"\",\n                \"DESC\": \"\",\n                \"CONF\": \"\",\n                \"ADMIN_STATE\": \"true\",\n                \"ENABLE_NETFLOW\": \"false\",\n                \"NETFLOW_MONITOR\": \"\"\n            }\n        },\n               {\n            \"serialNumber\": \"{{sn_leaf2}}\",\n            \"ifName\": \"{{interface}}\",\n            \"nvPairs\": {\n                \"INTF_NAME\": \"{{interface}}\",\n                \"BPDUGUARD_ENABLED\": \"true\",\n                \"PORTTYPE_FAST_ENABLED\": \"true\",\n                \"MTU\": \"jumbo\",\n                \"SPEED\": \"Auto\",\n                \"ACCESS_VLAN\": \"\",\n                \"DESC\": \"\",\n                \"CONF\": \"\",\n                \"ADMIN_STATE\": \"true\",\n                \"ENABLE_NETFLOW\": \"false\",\n                \"NETFLOW_MONITOR\": \"\"\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/interface",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"interface"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policy\": \"int_access_host\",\n    \"interfaces\": [\n        {\n            \"serialNumber\": \"{{sn_leaf1}}\",\n            \"ifName\": \"{{interface}}\",\n            \"nvPairs\": {\n                \"INTF_NAME\": \"{{interface}}\",\n                \"BPDUGUARD_ENABLED\": \"true\",\n                \"PORTTYPE_FAST_ENABLED\": \"true\",\n                \"MTU\": \"jumbo\",\n                \"SPEED\": \"Auto\",\n                \"ACCESS_VLAN\": \"\",\n                \"DESC\": \"\",\n                \"CONF\": \"\",\n                \"ADMIN_STATE\": \"true\",\n                \"ENABLE_NETFLOW\": \"false\",\n                \"NETFLOW_MONITOR\": \"\"\n            }\n        },\n               {\n            \"serialNumber\": \"{{sn_leaf2}}\",\n            \"ifName\": \"{{interface}}\",\n            \"nvPairs\": {\n                \"INTF_NAME\": \"{{interface}}\",\n                \"BPDUGUARD_ENABLED\": \"true\",\n                \"PORTTYPE_FAST_ENABLED\": \"true\",\n                \"MTU\": \"jumbo\",\n                \"SPEED\": \"Auto\",\n                \"ACCESS_VLAN\": \"\",\n                \"DESC\": \"\",\n                \"CONF\": \"\",\n                \"ADMIN_STATE\": \"true\",\n                \"ENABLE_NETFLOW\": \"false\",\n                \"NETFLOW_MONITOR\": \"\"\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/interface",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"interface"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:05:33 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Deploy Interface Configuration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"serialNumber\": \"{{sn_leaf1}}\",\n    \"ifName\": \"{{interface}}\"\n  },\n    {\n    \"serialNumber\": \"{{sn_leaf2}}\",\n    \"ifName\": \"{{interface}}\"\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/interface/deploy",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"interface",
+						"deploy"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"serialNumber\": \"{{sn_leaf1}}\",\n    \"ifName\": \"{{interface}}\"\n  },\n    {\n    \"serialNumber\": \"{{sn_leaf2}}\",\n    \"ifName\": \"{{interface}}\"\n  }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/interface/deploy",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"interface",
+								"deploy"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:05:56 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Create VRF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fabric\": \"{{fabric}}\",\r\n    \"vrfName\": \"{{vrf_name}}\",\r\n    \"vrfTemplate\": \"Default_VRF_Universal\",\r\n    \"vrfExtensionTemplate\": \"Default_VRF_Extension_Universal\",\r\n    \"vrfId\": {{vrf_id}},\r\n    \"vrfTemplateConfig\": {\r\n        \"vrfName\": \"{{vrf_name}}\",\r\n        \"vrfSegmentId\": {{vrf_id}},\r\n        \"vrfDescription\": \"{{vrf_name}}\",\r\n        \"vrfVlanId\": {{vrf_vlan}},\r\n        \"vrfVlanName\": \"{{vrf_name}}\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/vrfs",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"top-down",
+						"v2",
+						"fabrics",
+						"{{fabric}}",
+						"vrfs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fabric\": \"{{fabric}}\",\r\n    \"vrfName\": \"{{vrf_name}}\",\r\n    \"vrfTemplate\": \"Default_VRF_Universal\",\r\n    \"vrfExtensionTemplate\": \"Default_VRF_Extension_Universal\",\r\n    \"vrfId\": {{vrf_id}},\r\n    \"vrfTemplateConfig\": {\r\n        \"vrfName\": \"{{vrf_name}}\",\r\n        \"vrfSegmentId\": {{vrf_id}},\r\n        \"vrfDescription\": \"{{vrf_name}}\",\r\n        \"vrfVlanId\": {{vrf_vlan}},\r\n        \"vrfVlanName\": \"{{vrf_name}}\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/vrfs",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"top-down",
+								"v2",
+								"fabrics",
+								"{{fabric}}",
+								"vrfs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:07:13 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Attach VRF to Switch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"vrfName\": \"{{vrf_name}}\",\n        \"lanAttachList\": [\n            {\n                \"fabric\": \"{{fabric}}\",\n                \"vrfName\": \"{{vrf_name}}\",\n                \"serialNumber\": \"{{sn_leaf1}}\",\n                \"vlan\": {{vrf_vlan}},\n                \"deployment\": true\n            },\n            {\n                \"fabric\": \"{{fabric}}\",\n                \"vrfName\": \"{{vrf_name}}\",\n                \"serialNumber\": \"{{sn_leaf2}}\",\n                \"vlan\": {{vrf_vlan}},\n                \"deployment\": true\n            }\n        ]\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/vrfs/attachments",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"top-down",
+						"v2",
+						"fabrics",
+						"{{fabric}}",
+						"vrfs",
+						"attachments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"vrfName\": \"{{vrf_name}}\",\n        \"lanAttachList\": [\n            {\n                \"fabric\": \"{{fabric}}\",\n                \"vrfName\": \"{{vrf_name}}\",\n                \"serialNumber\": \"{{sn_leaf1}}\",\n                \"vlan\": {{vrf_vlan}},\n                \"deployment\": true\n            },\n            {\n                \"fabric\": \"{{fabric}}\",\n                \"vrfName\": \"{{vrf_name}}\",\n                \"serialNumber\": \"{{sn_leaf2}}\",\n                \"vlan\": {{vrf_vlan}},\n                \"deployment\": true\n            }\n        ]\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/vrfs/attachments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"top-down",
+								"v2",
+								"fabrics",
+								"{{fabric}}",
+								"vrfs",
+								"attachments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 19:01:58 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"PostmanVRF-[9BVVT2BV247/staging-leaf1]-[99NJT0MDE5B/staging-leaf2]\": \"SUCCESS Peer attach Reponse :  SUCCESS\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deploy VRF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vrfNames\": \"{{vrf_name}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/vrfs/deployments",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"top-down",
+						"v2",
+						"fabrics",
+						"{{fabric}}",
+						"vrfs",
+						"deployments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vrfNames\": \"{{vrf_name}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/vrfs/deployments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"top-down",
+								"v2",
+								"fabrics",
+								"{{fabric}}",
+								"vrfs",
+								"deployments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 19:03:41 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Deployed successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Network",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fabric\": \"{{fabric}}\",\r\n    \"networkName\": \"{{net_name}}\",\r\n    \"networkId\": {{net_id}},\r\n    \"networkTemplate\": \"Default_Network_Universal\",\r\n    \"networkExtensionTemplate\": \"Default_Network_Extension_Universal\",\r\n    \"vrf\": \"{{vrf_name}}\",\r\n    \"tenantName\": \"Mytenant\",\r\n    \"networkTemplateConfig\": {\r\n        \"vlanId\": {{net_vlan}},\r\n        \"gatewayIpAddress\": \"{{net_gw_ipv4}}\",\r\n        \"vlanName\": \"{{net_name}}\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/networks",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"top-down",
+						"v2",
+						"fabrics",
+						"{{fabric}}",
+						"networks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fabric\": \"{{fabric}}\",\r\n    \"networkName\": \"{{net_name}}\",\r\n    \"networkId\": {{net_id}},\r\n    \"networkTemplate\": \"Default_Network_Universal\",\r\n    \"networkExtensionTemplate\": \"Default_Network_Extension_Universal\",\r\n    \"vrf\": \"{{vrf_name}}\",\r\n    \"tenantName\": \"Mytenant\",\r\n    \"networkTemplateConfig\": {\r\n        \"vlanId\": {{net_vlan}},\r\n        \"gatewayIpAddress\": \"{{net_gw_ipv4}}\",\r\n        \"vlanName\": \"{{net_name}}\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/networks",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"top-down",
+								"v2",
+								"fabrics",
+								"{{fabric}}",
+								"networks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:07:23 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Attach Network to Switch and Interface",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"networkName\": \"{{net_name}}\",\r\n        \"lanAttachList\": [\r\n            {\r\n                \"fabric\": \"{{fabric}}\",\r\n                \"networkName\": \"{{net_name}}\",\r\n                \"serialNumber\": \"{{sn_leaf1}}\",\r\n                \"switchPorts\": \"{{interface}}\",\r\n                \"detachSwitchPorts\": \"\",\r\n                \"deployment\": true\r\n            },\r\n            {\r\n                \"fabric\": \"{{fabric}}\",\r\n                \"networkName\": \"{{net_name}}\",\r\n                \"serialNumber\": \"{{sn_leaf2}}\",\r\n                \"switchPorts\": \"{{interface}}\",\r\n                \"detachSwitchPorts\": \"\",\r\n                \"deployment\": true\r\n            }\r\n        ]\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/networks/attachments",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"top-down",
+						"v2",
+						"fabrics",
+						"{{fabric}}",
+						"networks",
+						"attachments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"networkName\": \"{{net_name}}\",\r\n        \"lanAttachList\": [\r\n            {\r\n                \"fabric\": \"{{fabric}}\",\r\n                \"networkName\": \"{{net_name}}\",\r\n                \"serialNumber\": \"{{sn_leaf1}}\",\r\n                \"switchPorts\": \"{{interface}}\",\r\n                \"detachSwitchPorts\": \"\",\r\n                \"deployment\": true\r\n            },\r\n            {\r\n                \"fabric\": \"{{fabric}}\",\r\n                \"networkName\": \"{{net_name}}\",\r\n                \"serialNumber\": \"{{sn_leaf2}}\",\r\n                \"switchPorts\": \"{{interface}}\",\r\n                \"detachSwitchPorts\": \"\",\r\n                \"deployment\": true\r\n            }\r\n        ]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/networks/attachments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"top-down",
+								"v2",
+								"fabrics",
+								"{{fabric}}",
+								"networks",
+								"attachments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "112"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:07:33 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"PostmanNet1-[9BVVT2BV247/staging-leaf1]-[99NJT0MDE5B/staging-leaf2]\": \"SUCCESS Peer attach Reponse :  SUCCESS\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deploy Network",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/networks/{{net_name}}/deploy",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"appcenter",
+						"cisco",
+						"ndfc",
+						"api",
+						"v1",
+						"lan-fabric",
+						"rest",
+						"top-down",
+						"v2",
+						"fabrics",
+						"{{fabric}}",
+						"networks",
+						"{{net_name}}",
+						"deploy"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/appcenter/cisco/ndfc/api/v1/lan-fabric/rest/top-down/v2/fabrics/{{fabric}}/networks/{{net_name}}/deploy",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"appcenter",
+								"cisco",
+								"ndfc",
+								"api",
+								"v1",
+								"lan-fabric",
+								"rest",
+								"top-down",
+								"v2",
+								"fabrics",
+								"{{fabric}}",
+								"networks",
+								"{{net_name}}",
+								"deploy"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 May 2023 02:07:48 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "-1"
+						},
+						{
+							"key": "X-Ratelimit-Reset",
+							"value": "1559582945"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Deployed successfully\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://ndfc",
+			"type": "default"
+		},
+		{
+			"key": "login_domain",
+			"value": "local",
+			"type": "default"
+		},
+		{
+			"key": "username",
+			"value": "admin",
+			"type": "default"
+		},
+		{
+			"key": "password",
+			"value": "cisco.123",
+			"type": "default"
+		},
+		{
+			"key": "fabric",
+			"value": "fabric-stage",
+			"type": "default"
+		},
+		{
+			"key": "sn_leaf1",
+			"value": "dummy",
+			"type": "default"
+		},
+		{
+			"key": "sn_leaf2",
+			"value": "dummy",
+			"type": "default"
+		},
+		{
+			"key": "vrf_name",
+			"value": "PostmanVRF",
+			"type": "default"
+		},
+		{
+			"key": "vrf_id",
+			"value": "50001",
+			"type": "default"
+		},
+		{
+			"key": "vrf_vlan",
+			"value": "2001",
+			"type": "default"
+		},
+		{
+			"key": "net_name",
+			"value": "PostmanNet1",
+			"type": "default"
+		},
+		{
+			"key": "net_id",
+			"value": "30001",
+			"type": "default"
+		},
+		{
+			"key": "net_vlan",
+			"value": "2301",
+			"type": "default"
+		},
+		{
+			"key": "net_gw_ipv4",
+			"value": "192.168.12.1/24",
+			"type": "string"
+		},
+		{
+			"key": "interface",
+			"value": "Ethernet1/1",
+			"type": "string"
+		},
+		{
+			"key": "apiKey",
+			"value": "ddeae05563364fc492631e1ec4430bb30455b36b6b8e48d892fcccbb9a49f293",
+			"type": "string"
+		}
+	]
+}
