@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9738c8a3-12ba-4011-aef0-9e0a5d43e6f8",
+		"_postman_id": "e88e408d-5031-48fb-b5fd-2f3aca50444a",
 		"name": "NDFC RESTAPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "210543"
@@ -1231,7 +1231,7 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "https://ndfc",
+			"value": "https://10.10.20.60",
 			"type": "default"
 		},
 		{
@@ -1246,12 +1246,12 @@
 		},
 		{
 			"key": "password",
-			"value": "cisco.123",
+			"value": "1vtG@lw@y",
 			"type": "default"
 		},
 		{
 			"key": "fabric",
-			"value": "fabric-stage",
+			"value": "DevNet_Fabric",
 			"type": "default"
 		},
 		{
@@ -1301,7 +1301,7 @@
 		},
 		{
 			"key": "interface",
-			"value": "Ethernet1/1",
+			"value": "Ethernet1/5",
 			"type": "string"
 		},
 		{
